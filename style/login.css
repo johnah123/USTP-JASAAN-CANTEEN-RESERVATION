@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.main{
+    width: 365px;
+    background: #00aa6c83;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.main .title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+form{
+    margin-top: 20px;
+}
+form .input{
+    height: 45px;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+.input input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: .5px solid rgb(228, 228, 228);
+    border-radius: 15px;
+    padding-left: 45px;
+    font-size: 17px;
+    transition: all .5s ease;
+}
+.input input:hover{
+    border-color: #000;
+}
+.input input:focus{
+    border-color: #000;;
+}
+.input .icon{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #000;
+}
+form .options{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.options .checkbox{
+    display: flex;
+    align-items: center;
+}
+.options span{
+    margin-left: 5px;
+    font-size: 16px;
+    color: #000;
+}
+.options .forget_password a{
+    font-size: 16px;
+    color: #08ec98;
+}
+.button input{
+    padding-left: 0;
+    background: #00aa6c;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+.button input:hover{
+    background: #000;
+}
+form .register{
+    text-align: center;
+    margin-top: 20px;
+}
+.register a{
+    color: #04f59d;
+}
+form a{
+    text-decoration: none;
+}
+form a:hover{
+    text-decoration: underline;
+}
+.divider{
+    height: 1px;
+    width: 100%;
+    border-top: solid thin #f0f0f0;
+    margin: 20px 0;
+    text-align: center;
+}
+.divider:after{
+    content: attr(data-label);
+    display: inline-block;
+    background: #fff;
+    padding: 0 32px;
+    position: relative;
+    top: -15px;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+.main .social_register{
+    margin-top: 20px;
+    display: block;
+}
+.social_register a{
+    display: block;
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s linear;
+}
+.social_register a span{
+    margin-left: 5px;
+    font-size: 18px;
+}
+.google{
+    background: #b5b7bb;
+}
+.google:hover{
+    background: #a8acb4;
+}
+.facebook{
+    background: #4267b2;
+}
+.facebook:hover{
+    background: #375695;
+}
+.twitter{
+    background: #1DA1F2;
+}
+.twitter:hover{
+    background: #0d8bd9;
+}
